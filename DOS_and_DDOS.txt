@@ -1,0 +1,50 @@
+
+To perform DOS and DDOS attacks on a system by CLI and by any tool.
+
+
+Author : Syed Alfran Ali
+	
+
+DOS:
+
+Naive way: 
+
+ping the website and get the IP Address
+
+For eg: ping www.iiitkota.ac.in -t
+Now type “ping -f www.iiitkota.ac.in -s 65500”
+Run the command for hours. If possible use multiple computers to run the same command at a same time.
+Now, when you visit the website after 2 or 3 hours, you will find the “website is temporary down” or “server unavailable” message.
+
+
+My OS: KALI LINUX
+
+In kali there are many tools for dos attacks. Some of the mini list is shown in the pic uploaded.
+/usr/share/exploitdb/platforms/windows/dos   ...This is one of the path to see the list in kali.
+
+Other tools:
+HOIC : HOIC uses a HTTP flood using booster files that enable a small number of users to effectively DoS a website by sending a flood of randomized HTTP GET and POST requests.
+
+XOIC: The user simply needs to set the IP address and port of the target, select a protocol (HTTP, UDP, ICMP, or TCP), then begin to fire away!
+
+HULK: This tool is capable of bringing down web servers. This tool uses various obfuscation techniques to limit the ability of the target to mitigate the attack. 
+
+More other tools: UDP Flooder, RUDY, ToR's Hammer, 8Pylori, OWASP Switchblade, DAVOSET, GoldenEye HTTP DoS Tool, THC-SSL-DOS (Screen Shot Attached)
+
+
+DDOS:
+Find the IP address of the website you want to attack using “ping www.iiitkota.ac.in -t”
+
+Now type “ping -f www.iiitkota.ac.in -s 65500” on more than 2 computers.
+
+Run the command for hours. If possible use multiple computers to run the same command at a same time.
+Now, when you visit the website after 2 or 3 hours, you will find the “website is temporary down” or “server unavailable” message
+
+It will take less time than DOS, but CLI is very slow process for attacking websites. Instead we can use tools mentioned above for DOS, they have options for DDOS too.
+
+
+Another cool tool in Kali for DOS and DDOS attacks is ettercap(screenshot attached)
+Another online available github source is pentmenu(screenshot attached)
+
+For checking weather the site is down for only you or for everyone enter the link in the following site space:
+http://downforeveryoneorjustme.com/
